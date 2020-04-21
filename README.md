@@ -1,6 +1,6 @@
 # guest book test app
 
-written in node.js (express, sequalize.js postgerSQL)
+written in node.js (express, sequalize.js postgreSQL)
 
 ## Installation
 
@@ -14,7 +14,7 @@ npm i
 Use migrations right after installing node modules
 
 ```bash
-nom run migrate
+npm run migrate
 ```
 so now you have 2 tables created ``users`` and ``posts``
 
