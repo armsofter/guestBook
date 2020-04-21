@@ -1,0 +1,13 @@
+{
+  "development": {
+    "username": "postgres",
+    "password": "",
+    "database": "guestbook",
+    "host": "127.0.0.1",
+    "port": 5432,
+    "dialect": "postgres",
+    "log": false
+  },
+  "jwtSecret": "secretKey",
+  "postsPerPage": 5
+}

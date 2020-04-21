@@ -1,0 +1,203 @@
+{
+	"variables": [],
+	"info": {
+		"name": "guestBook",
+		"_postman_id": "5e925f76-daec-3355-80ef-7210485db21c",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:3000/users/login",
+			"request": {
+				"url": "http://localhost:3000/users/login",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"username\": \"user3\",\n\t\"password\": \"1111\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/users/currentUser",
+			"request": {
+				"url": "http://localhost:3000/users/currentUser",
+				"method": "GET",
+				"header": [
+					{
+						"key": "jwt",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjE0LCJpYXQiOjE1ODc0NzE4Nzl9.gS2LBlKOn4IDvBCdlowZnOWyPT3hDeSHcxdIncr71AM",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/users/list",
+			"request": {
+				"url": "http://localhost:3000/users/list",
+				"method": "GET",
+				"header": [
+					{
+						"key": "jwt",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjE0LCJpYXQiOjE1ODc0NzE4Nzl9.gS2LBlKOn4IDvBCdlowZnOWyPT3hDeSHcxdIncr71AM",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/posts/new",
+			"request": {
+				"url": "http://localhost:3000/posts/new",
+				"method": "POST",
+				"header": [
+					{
+						"key": "jwt",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjE0LCJpYXQiOjE1ODc0NzE4Nzl9.gS2LBlKOn4IDvBCdlowZnOWyPT3hDeSHcxdIncr71AM",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"postText\": \"some saidofosf\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/posts/delete",
+			"request": {
+				"url": "http://localhost:3000/posts/delete",
+				"method": "POST",
+				"header": [
+					{
+						"key": "jwt",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjE0LCJpYXQiOjE1ODc0NzE4Nzl9.gS2LBlKOn4IDvBCdlowZnOWyPT3hDeSHcxdIncr71AM",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"postId\": 2\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/posts/count",
+			"request": {
+				"url": "http://localhost:3000/posts/count",
+				"method": "GET",
+				"header": [
+					{
+						"key": "jwt",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjE0LCJpYXQiOjE1ODc0NzE4Nzl9.gS2LBlKOn4IDvBCdlowZnOWyPT3hDeSHcxdIncr71AM",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/posts/list/5",
+			"request": {
+				"url": "http://localhost:3000/posts/list/5",
+				"method": "GET",
+				"header": [
+					{
+						"key": "jwt",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjE0LCJpYXQiOjE1ODc0NzE4Nzl9.gS2LBlKOn4IDvBCdlowZnOWyPT3hDeSHcxdIncr71AM",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/posts/list/",
+			"request": {
+				"url": "http://localhost:3000/posts/list/",
+				"method": "GET",
+				"header": [
+					{
+						"key": "jwt",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjE0LCJpYXQiOjE1ODc0NzE4Nzl9.gS2LBlKOn4IDvBCdlowZnOWyPT3hDeSHcxdIncr71AM",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/users/register",
+			"request": {
+				"url": "http://localhost:3000/users/register",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"username\": \"user3\",\n\t\"password\": \"1111\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/posts/userPosts",
+			"request": {
+				"url": "http://localhost:3000/posts/userPosts",
+				"method": "GET",
+				"header": [
+					{
+						"key": "jwt",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjE1LCJpYXQiOjE1ODc0NzkxNzF9.8jXJN2-Mpaw4yq0I1X9SkPH-cnLvmOBC1virZHht050",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
